@@ -1,0 +1,37 @@
+Variance Inflation Factors
+Minimum possible value = 1.0
+Values > 10.0 may indicate a collinearity problem
+
+   CreditScore    1.001
+           Age    2.105
+        Tenure    1.002
+       Balance   14.026
+ NumOfProducts    1.123
+IsActiveMember    1.014
+        France    1.783
+         Spain    1.709
+        Female    1.003
+    balanceAge   14.562
+
+VIF(j) = 1/(1 - R(j)^2), where R(j) is the multiple correlation coefficient
+between variable j and the other independent variables
+
+Belsley-Kuh-Welsch collinearity diagnostics:
+
+                         --- variance proportions ---
+    lambda      cond     const CreditSc~       Age    Tenure   Balance NumOfPro~ IsActive~    France     Spain    Female balanceA~
+     7.599     1.000     0.000     0.000     0.000     0.003     0.000     0.002     0.004     0.003     0.002     0.005     0.000
+     1.000     2.756     0.000     0.000     0.000     0.000     0.000     0.000     0.000     0.119     0.351     0.000     0.000
+     0.755     3.172     0.000     0.000     0.000     0.001     0.010     0.004     0.025     0.069     0.040     0.016     0.012
+     0.582     3.613     0.000     0.000     0.000     0.008     0.000     0.002     0.819     0.011     0.014     0.062     0.000
+     0.444     4.135     0.000     0.000     0.001     0.027     0.000     0.003     0.032     0.045     0.032     0.864     0.000
+     0.259     5.419     0.000     0.000     0.000     0.522     0.002     0.013     0.000     0.351     0.259     0.000     0.004
+     0.197     6.210     0.001     0.004     0.005     0.373     0.001     0.261     0.033     0.196     0.155     0.032     0.002
+     0.099     8.774     0.003     0.010     0.114     0.028     0.003     0.436     0.064     0.085     0.066     0.001     0.022
+     0.045    12.960     0.025     0.194     0.089     0.020     0.094     0.210     0.010     0.078     0.054     0.014     0.031
+     0.013    24.549     0.128     0.530     0.192     0.005     0.444     0.029     0.002     0.028     0.015     0.002     0.383
+     0.006    35.013     0.842     0.261     0.598     0.013     0.445     0.042     0.009     0.015     0.012     0.004     0.546
+
+  lambda = eigenvalues of X'X, largest to smallest
+  cond   = condition index
+  note: variance proportions columns sum to 1.0

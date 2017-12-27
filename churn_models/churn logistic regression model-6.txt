@@ -1,0 +1,33 @@
+﻿Model 7: Logit, using observations 1-10000
+Dependent variable: Exited
+Standard errors based on Hessian
+
+                   coefficient    std. error       z       p-value 
+  -----------------------------------------------------------------
+  const            −3.07954       0.259001      −11.89    1.33e-032 ***
+  CreditScore      −0.000677385   0.000280382    −2.416   0.0157    **
+  Age               0.0706602     0.00309450     22.83    2.10e-115 ***
+  Tenure           −0.0158955     0.00934740     −1.701   0.0890    *
+  NumOfProducts    −0.0957427     0.0475663      −2.013   0.0441    **
+  IsActiveMember   −1.07365       0.0576754     −18.62    2.41e-077 ***
+  France           −0.758215      0.0693331     −10.94    7.77e-028 ***
+  Spain            −0.722720      0.0802162      −9.010   2.07e-019 ***
+  Female            0.525858      0.0544746       9.653   4.76e-022 ***
+  balanceAge       −4.31620e-05   3.77862e-05    −1.142   0.2533   
+  logbalage         0.0412485     0.0115602       3.568   0.0004    ***
+
+Mean dependent var   0.203700   S.D. dependent var   0.402769
+McFadden R-squared   0.152943   Adjusted R-squared   0.150767
+Log-likelihood      −4281.782   Akaike criterion     8585.563
+Schwarz criterion    8664.877   Hannan-Quinn         8612.410
+
+Number of cases 'correctly predicted' = 8128 (81.3%)
+f(beta'x) at mean of independent vars = 0.135
+Likelihood ratio test: Chi-square(10) = 1546.22 [0.0000]
+
+           Predicted
+               0      1
+  Actual 0  7688    275
+         1  1597    440
+
+Excluding the constant, p-value was highest for variable 20 (balanceAge)

@@ -1,0 +1,35 @@
+Variance Inflation Factors
+Minimum possible value = 1.0
+Values > 10.0 may indicate a collinearity problem
+
+   CreditScore    1.001
+           Age    1.012
+        Tenure    1.001
+ NumOfProducts    1.151
+IsActiveMember    1.010
+        France    1.854
+         Spain    1.762
+        Female    1.003
+     logbalage    1.420
+
+VIF(j) = 1/(1 - R(j)^2), where R(j) is the multiple correlation coefficient
+between variable j and the other independent variables
+
+Belsley-Kuh-Welsch collinearity diagnostics:
+
+                         --- variance proportions ---
+    lambda      cond     const CreditSc~       Age    Tenure NumOfPro~ IsActive~    France     Spain    Female logbalage
+     6.979     1.000     0.000     0.000     0.001     0.004     0.002     0.005     0.003     0.002     0.006     0.003
+     1.000     2.641     0.000     0.000     0.000     0.000     0.000     0.000     0.119     0.339     0.000     0.000
+     0.582     3.462     0.000     0.000     0.000     0.008     0.002     0.833     0.008     0.012     0.061     0.000
+     0.452     3.931     0.000     0.000     0.000     0.003     0.001     0.012     0.274     0.198     0.008     0.202
+     0.444     3.963     0.000     0.001     0.001     0.035     0.002     0.048     0.006     0.004     0.879     0.015
+     0.232     5.491     0.001     0.001     0.003     0.803     0.000     0.019     0.078     0.056     0.010     0.133
+     0.186     6.132     0.001     0.001     0.003     0.095     0.384     0.009     0.231     0.182     0.017     0.150
+     0.078     9.455     0.005     0.018     0.348     0.019     0.399     0.052     0.187     0.143     0.002     0.293
+     0.038    13.483     0.030     0.276     0.527     0.014     0.128     0.020     0.044     0.032     0.011     0.119
+     0.009    28.478     0.963     0.703     0.116     0.019     0.082     0.002     0.050     0.032     0.007     0.085
+
+  lambda = eigenvalues of X'X, largest to smallest
+  cond   = condition index
+  note: variance proportions columns sum to 1.0

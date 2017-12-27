@@ -1,0 +1,30 @@
+﻿Model 4: Logit, using observations 1-10000
+Dependent variable: Exited
+Standard errors based on Hessian
+
+                   coefficient    std. error       z       p-value 
+  -----------------------------------------------------------------
+  const            −3.13173       0.245218      −12.77    2.37e-037 ***
+  CreditScore      −0.000668170   0.000280314    −2.384   0.0171    **
+  Age               0.0726845     0.00257476     28.23    2.53e-175 ***
+  Tenure           −0.0159542     0.00934999     −1.706   0.0879    *
+  Balance           2.65297e-06   5.13990e-07     5.162   2.45e-07  ***
+  NumOfProducts    −0.100719      0.0471245      −2.137   0.0326    **
+  IsActiveMember   −1.07535       0.0576665     −18.65    1.32e-077 ***
+  France           −0.774059      0.0676575     −11.44    2.61e-030 ***
+  Spain            −0.738194      0.0787834      −9.370   7.26e-021 ***
+  Female            0.529118      0.0544817       9.712   2.68e-022 ***
+
+Mean dependent var   0.203700   S.D. dependent var   0.402769
+McFadden R-squared   0.153003   Adjusted R-squared   0.151025
+Log-likelihood      −4281.476   Akaike criterion     8582.953
+Schwarz criterion    8655.056   Hannan-Quinn         8607.359
+
+Number of cases 'correctly predicted' = 8116 (81.2%)
+f(beta'x) at mean of independent vars = 0.135
+Likelihood ratio test: Chi-square(9) = 1546.83 [0.0000]
+
+           Predicted
+               0      1
+  Actual 0  7676    287
+         1  1597    440
